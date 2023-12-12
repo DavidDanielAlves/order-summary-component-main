@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- fonts do projeto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- tailwind css link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              paleBlue: 'hsl(225, 100%, 94%)',
+              brightBlue: 'hsl(245, 75%, 52%)'
+            },
+            neutral: {
+              veryPaleBlue: 'hsl(225, 100%, 98%)',
+              desaturatedBlue: 'hsl(224, 23%, 55%)',
+              darkBlue: 'hsl(223, 47%, 23%)'
+            },
+          },
+          fontSize: {
+            fontSizeParagraph: '16px'
+          },
+          fontFamily: {
+            family: ['Red Hat Display', 'sans-serif']
+          },
+          fontWeights: {
+            medium: 500,
+            bold: '700',
+            extrabold: 900
+          },
+          boxShadow: {
+            '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body
+  class="flex flex-col justify-center h-screen bg-primary-paleBlue text-fontSize-fontSizeParagraph fontFamily-family">
+  <main class="w-4/5 m-auto bg-white rounded-2xl shadow-2xl xl:w-1/4">
+    <div>
+      <img src="images/illustration-hero.svg" alt="imagem de pessoa feliz ouvindo musica" class="w-full rounded-t-2xl">
+    </div>
+    <div class="p-5">
+      <div>
+        <h1 class="text-center font-bold text-xl">Order Summary</h1>
+        <p class="text-center w-full my-4">You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
+      </div>
+      <div class="flex justify-between items-center bg-neutral-veryPaleBlue p-3 rounded-xl">
+        <div class="flex items-center gap-3">
+          <img src="images/icon-music.svg" alt="icone de nota de som">
+          <div>
+            <h2 class="font-bold text-sm">Annual Plan</h2>
+            <p class="text-neutral-desaturatedBlue text-sm">$59.99/year</p>
+          </div>
+        </div>
+        <a href="#" class="font-bold underline text-blue-800 text-sm hover:text-neutral-desaturatedBlue">Change</a>
+      </div>
+      <div class="flex flex-col items-center">
+        <button class="w-full py-3 my-5 bg-primary-brightBlue rounded-xl text-white font-bold shadow-[10px_15px_40px_-15px_rgba(0,0,0,1)] hover:bg-neutral-desaturatedBlue">Proceed to
+          Payment</button>
+        <a href="#" class="font-bold text-neutral-desaturatedBlue hover:text-neutral-darkBlue">Cancel Order</a>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
